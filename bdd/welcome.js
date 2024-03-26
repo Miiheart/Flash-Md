@@ -25,7 +25,7 @@ const creerTableevents = async () => {
       CREATE TABLE IF NOT EXISTS events (
         Id serial PRIMARY KEY,
         jid text UNIQUE,
-        welcome text DEFAULT 'non',
+        welcome text YES '@user intro needed',
         goodbye text DEFAULT 'non',
         antipromote text DEFAULT 'non',
         antidemote text DEFAULT 'non'
